@@ -4,18 +4,17 @@ public class Qu7 extends Tea{
 	
 	public static void main(String[] args)
 	{
-		Tea objTea = new Tea();
-		objTea.prepareTea();
-		objTea.addMilk();
-		objTea.addSugar();
+		Tea[] objT = new Tea[4];
+		objT[0] = new Tea();
+		objT[1] = new BlackTea();
+		objT[2] = new GreenTea();
+		objT[3] = new HerbalTea();
 		
-		BlackTea objBlackTea = new BlackTea();
-		objBlackTea.prepareTea();
 		
-		GreenTea objGreenTea = new GreenTea();
-		objGreenTea.prepareTea();
+		objT[0].prepareTea();
+		objT[1].prepareTea();
+		objT[2].prepareTea();
+		objT[3].prepareTea();
 		
-		HerbalTea objHerbalTea = new HerbalTea();
-		objHerbalTea.prepareTea();		
 	}
 }
